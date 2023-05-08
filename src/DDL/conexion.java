@@ -16,7 +16,6 @@ public class conexion {
             stn.close();
             con.close();
 
-
         } catch (SQLException t ){
             t.printStackTrace();
         } catch (ClassNotFoundException e) {
