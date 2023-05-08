@@ -1,0 +1,2 @@
+CREATE OR REPLACE USER pablo IDENTIFIED BY 'pablo';
+GRANT ALL ON *.* TO pablo;

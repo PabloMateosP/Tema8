@@ -1,0 +1,3 @@
+Para entrar en mysql mediante la consola primero tenemos que añadir una nueva variabl de entorno "C:\xamppp\mysql\bin"
+Después para entrar escribimos en el cmd mysql -u root
+SIEMPRE TENIENDO EL XAMPP ACTIVADO
