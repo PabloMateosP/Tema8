@@ -11,7 +11,7 @@ public class conexion {
         try {
             Class.forName("org.mariadb.jdbc.Driver");
 
-            Connection con = DriverManager.getConnection(url, "root", "root");
+            Connection con = DriverManager.getConnection(url, "pablo", "Tokito1301");
             Statement stn = con.createStatement();
             stn.close();
             con.close();
