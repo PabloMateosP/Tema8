@@ -9,6 +9,12 @@ public class Artista implements Serializable {
     private String apel1;
     private Integer edad;
 
+    public Artista(String nombre, String apel1, Integer edad){
+        this.nombre = nombre;
+        this.apel1 = apel1;
+        this.edad = edad;
+    }
+
     public String getNombre() {
         return nombre;
     }

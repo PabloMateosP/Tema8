@@ -1,6 +1,8 @@
 package Ejercicios_Diapositiva.Ejercicio_1;
 import java.io.Serializable;
+import java.math.BigDecimal;
 import java.math.BigInteger;
+import java.time.LocalDate;
 import java.util.Date;
 
 public class POJO_TiposDeDatos implements Serializable {
@@ -16,14 +18,17 @@ public class POJO_TiposDeDatos implements Serializable {
 
     private String nombre;
     private Date fecha;
-    private BigInteger recaudacion;
-    public BigInteger getRecaudacion() {
+    private BigDecimal recaudacion;
+    public BigDecimal getRecaudacion() {
         return recaudacion;
     }
-    public void setRecaudacion(BigInteger recaudacion) {
+    public void setRecaudacion(BigDecimal recaudacion) {
         this.recaudacion = recaudacion;
     }
-    public POJO_TiposDeDatos(){
+    public POJO_TiposDeDatos(String nombre, Date fecha, BigDecimal recaudacion){
+        this.nombre = nombre;
+        this.fecha = fecha;
+        this.recaudacion = recaudacion;
     }
     public String getNombre() {
         return nombre;
