@@ -1,15 +1,22 @@
 package EjerciciosMoodle.Actividad8_1;
 
 import javax.persistence.Embeddable;
-import java.math.BigDecimal;
 import java.math.BigInteger;
-import java.util.Date;
+import java.sql.Timestamp;
+
 @Embeddable
 public class Especificaciones {
-    BigInteger memoria;
-    BigInteger disco_duro;
-    String cpu;
-    Date fecha_compra;
+
+    private BigInteger memoria;
+
+    private BigInteger discoduro;
+
+    private String cpu;
+
+    private Timestamp fechacompra;
+
+    public Especificaciones() {
+    }
 
     public BigInteger getMemoria() {
         return memoria;
@@ -19,12 +26,12 @@ public class Especificaciones {
         this.memoria = memoria;
     }
 
-    public BigInteger getDisco_duro() {
-        return disco_duro;
+    public BigInteger getDiscoduro() {
+        return discoduro;
     }
 
-    public void setDisco_duro(BigInteger disco_duro) {
-        this.disco_duro = disco_duro;
+    public void setDiscoduro(BigInteger discoduro) {
+        this.discoduro = discoduro;
     }
 
     public String getCpu() {
@@ -35,13 +42,11 @@ public class Especificaciones {
         this.cpu = cpu;
     }
 
-    public Date getFecha_compra() {
-        return fecha_compra;
+    public Timestamp getFechacompra() {
+        return fechacompra;
     }
 
-    public void setFecha_compra(Date fecha_compra) {
-        this.fecha_compra = fecha_compra;
+    public void setFechacompra(Timestamp fechacompra) {
+        this.fechacompra = fechacompra;
     }
-
-
 }
